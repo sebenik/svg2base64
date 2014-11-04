@@ -1,0 +1,11 @@
+{
+	"name":"svg2base64png",
+	"version":"1.0.4",
+	"author":"Žiga Šebenik <ziga@sebenik.com>",
+	"dependencies": {
+					"phantomjs":"^1.9.7-1"
+					},
+	"license":"WTFPL",
+	"main":"lib/svg2base64png.js",
+	"files":["lib/svg2base64png.js", "lib/converter.js"]
+}
