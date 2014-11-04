@@ -1,7 +1,7 @@
 {
 	"name":"svg2base64",
 	"description":"Convert SVGs to images and output them to stdout as base64 (PhantomJS)",
-	"version":"1.0.52",
+	"version":"1.0.53",
 	"author":"Žiga Šebenik <ziga@sebenik.com>",
 	"keywords":["svg", "base64", "image", "stdout", "phantomjs"],
 	"dependencies": {
@@ -9,7 +9,7 @@
 	},
 	"license":"WTFPL",
 	"main":"lib/svg2base64.js",
-	"files":["lib/svg2base64png.js", "lib/converter.js"],
+	"files":["lib/svg2base64.js", "lib/converter.js"],
 	"homepage": "http://github.com/sebenik/svg2base64",
 	"repository":{
 		"type": "git",
