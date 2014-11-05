@@ -1,4 +1,4 @@
-### Convert SVG images and output them to stdout as base64 (PhantomJS)
+### Convert SVGs to images and output them to stdout as base64 (PhantomJS)
 
 If you want to convert SVG to image from some other script like (PHP, Python, ...) or for whatever reason you need an image to be encoded in base64, you can use this.
 
@@ -47,13 +47,13 @@ svg2base64(svg, {options})
 1. svg: svg String
 2. options
 	* '**_scale_**':  scale factor (default: 1)
-	* '**_id_**':     useful (or baisicly needed) in parallel conversion. If you are converting multiple images in async, id must be used to determine which base64 string represents certain image. (default: empty string)
+	* '**_id_**':     useful (or basically needed) in parallel conversion. If you are converting multiple images in async, id must be used to determine which base64 string represents certain image. (default: empty string)
 	* '**_type_**':   image type ('png' or 'jpeg'; default: 'png')
 	* '**_width_**':  image width (default: svg width)
 	* '**_height_**': image height (default: svg height)
 
 #### Output:
-Each base64 image string is outputed in one row of stdout. If id for the image is set, id and base64 image data are delimited with space char.
+Each base64 image string is outputted in one row of stdout. If id for the image is set, id and base64 image data are delimited with space char.
 
 id base64_image<br />
 id base64_image<br />
