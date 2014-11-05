@@ -1,7 +1,7 @@
 {
 	"name":"svg2base64",
 	"description":"Convert SVGs to images and output them to stdout as base64 (PhantomJS)",
-	"version":"1.0.53",
+	"version":"1.0.54",
 	"author":"Žiga Šebenik <ziga@sebenik.com>",
 	"keywords":["svg", "base64", "image", "stdout", "phantomjs"],
 	"dependencies": {
