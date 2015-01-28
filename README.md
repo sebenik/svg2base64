@@ -1,4 +1,4 @@
-[Click here to get this package from www.node.js.com.](https://www.npmjs.com/package/svg2base64)
+[Click here to get this package from www.npmjs.com.](https://www.npmjs.com/package/svg2base64)
 
 ### Convert SVGs to images and output them to stdout as base64 (PhantomJS)
 
