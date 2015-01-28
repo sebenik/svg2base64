@@ -1,3 +1,5 @@
+[Click here to get this package from www.node.js.com.](https://www.npmjs.com/package/svg2base64)
+
 ### Convert SVGs to images and output them to stdout as base64 (PhantomJS)
 
 If you want to convert SVG to image from some other script like (PHP, Python, ...) or for whatever reason you need an image to be encoded in base64, you can use this.
