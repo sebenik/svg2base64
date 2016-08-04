@@ -4,7 +4,8 @@
 
 If you want to convert SVG to image from some other script like (PHP, Python, ...) or for whatever reason you need an image to be encoded in base64, you can use this.
 
-In new version, you can specify additional _css_ and _defs_ options to style your SVGs.
+#### Changelog:
+**v1.6** You can specify additional _css_ and _defs_ options to style your SVGs.
 
 #### Example:
 ```javascript
