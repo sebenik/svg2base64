@@ -1,20 +1,20 @@
 {
-	"name":"svg2base64",
-	"description":"Convert SVGs to images and output them to stdout as base64 (PhantomJS)",
-	"version":"1.0.54",
-	"author":"Žiga Šebenik <ziga@sebenik.com>",
-	"keywords":["svg", "base64", "image", "stdout", "phantomjs"],
-	"dependencies": {
-		"phantomjs":"^1.9.7-1",
-		"xmldom":"^0.1.22"
-	},
-	"license":"WTFPL",
-	"main":"lib/svg2base64.js",
-	"files":["lib/svg2base64.js", "lib/converter.js"],
-	"homepage": "http://github.com/sebenik/svg2base64",
-	"repository":{
-		"type": "git",
-		"url": "git://github.com/sebenik/svg2base64.git"
-	},
-	"bugs": "http://github.com/sebenik/svg2base64/issues"
+  "name":"svg2base64",
+  "description":"Convert SVGs to images and output them to stdout as base64 (PhantomJS)",
+  "version":"1.6",
+  "author":"Žiga Šebenik <ziga@sebenik.com>",
+  "keywords":["svg", "base64", "image", "stdout", "phantomjs", "convert", "css", "defs"],
+  "dependencies": {
+    "phantomjs":"^1.9.7-1",
+    "xmldom":"^0.1.22"
+  },
+  "license":"MIT",
+  "main":"lib/svg2base64.js",
+  "files":["lib/svg2base64.js", "lib/converter.js"],
+  "homepage":"http://github.com/sebenik/svg2base64",
+  "repository":{
+    "type": "git",
+    "url": "git://github.com/sebenik/svg2base64.git"
+  },
+  "bugs": "http://github.com/sebenik/svg2base64/issues"
 }
