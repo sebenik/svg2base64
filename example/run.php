@@ -1,4 +1,5 @@
 #!/usr/bin/php
+
 <?php
 exec('node example.js', $out, $ret);
 
@@ -10,3 +11,4 @@ foreach($out as $b64) {
     file_put_contents($id.'.png', base64_decode($image));
   }
 }
+

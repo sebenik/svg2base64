@@ -11,7 +11,6 @@ var svg =
   + '</svg>';
 
 var scale = 4;
-
 // convert svg to base64 encoded image
 svg2base64(svg, {
   "scale": scale,
