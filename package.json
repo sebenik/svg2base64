@@ -5,7 +5,8 @@
 	"author":"Žiga Šebenik <ziga@sebenik.com>",
 	"keywords":["svg", "base64", "image", "stdout", "phantomjs"],
 	"dependencies": {
-		"phantomjs":"^1.9.7-1"
+		"phantomjs":"^1.9.7-1",
+		"xmldom":"^0.1.22"
 	},
 	"license":"WTFPL",
 	"main":"lib/svg2base64.js",
