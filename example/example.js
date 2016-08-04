@@ -2,6 +2,7 @@
 
 var svg2base64 = require('../lib/svg2base64.js');
 
+// svg string
 var svg =
   '<svg xmlns="http://www.w3.org/2000/svg" width="300px" height="80">'
   + '<text x="150" y="40" dy=".4em" font-size="50px" text-anchor="middle">'
@@ -11,12 +12,14 @@ var svg =
 
 var scale = 4;
 
+// convert svg to base64 encoded image
 svg2base64(svg, {
   "scale": scale,
   "id": "svg",
   "type": 'png'
 });
 
+// convert svg to base64 encoded image with added css
 svg2base64(svg, {
   "scale": scale,
   "id": "svgCss",
@@ -24,6 +27,7 @@ svg2base64(svg, {
   "css": "text { fill: #735ce8; stroke: #33d8b8; }"
 });
 
+// convert svg to base64 encoded image with gradient (css+defs)
 svg2base64(svg, {
   "scale": scale,
   "id": "svgWithGradient",
