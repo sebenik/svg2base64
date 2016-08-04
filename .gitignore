@@ -1,0 +1,19 @@
+### Folders ###
+**/node_modules/
+.git/
+
+### Files ###
+tmux-client*
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### Sass ###
+.sass-cache/
+*.css.map
+
