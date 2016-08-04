@@ -4,6 +4,8 @@
 
 If you want to convert SVG to image from some other script like (PHP, Python, ...) or for whatever reason you need an image to be encoded in base64, you can use this.
 
+In new version, you can specify additional _css_ and _defs_ options to style your SVGs.
+
 #### Example:
 ```javascript
 var svg2base64 = require('svg2base64');
@@ -15,11 +17,11 @@ var svg =
 			'</text>' + 
 		'</svg>';                         
 
-svg2base64(svg,
-	{
-		"scale":4,
-		"id":"mySvg",
-		"type":'png'
+svg2base64(svg, {
+		"scale": 4,
+		"id": "mySvg",
+		"type": "png",
+    "css": "text { fill: #735ce8; stroke: #33d8b8; }"
 });         
 ```
 
@@ -27,17 +29,14 @@ That's it.
 You can use this from PHP for example:
 
 ```php
-exec('node example.js', $imges);
+exec('node example.js', $images);
 
-foreach($imges as $img)
-{
+foreach($images as $img) {
 	$img = explode(' ', $trim($img))
-	if(sizeof($img) == 2)
-	{
-		$imgID   = $img[0];
+	if(sizeof($img) == 2) {
+		$imgID = $img[0];
 		$imgData = $img[1];
-		// Do with your base64 image what you want
-		// We can just save it somewhere :)
+		// Do with your base64 image what you want (we can just save it)
 		file_put_contents($imgID.'.png', base64_decode($imgData));
 	}
 }
@@ -53,6 +52,8 @@ svg2base64(svg, {options})
 	* '**_type_**':   image type ('png' or 'jpeg'; default: 'png')
 	* '**_width_**':  image width (default: svg width)
 	* '**_height_**': image height (default: svg height)
+	* '**_defs**':    defs string (default: empty string) [MDN ref](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
+	* '**_css**':     css string (default: empty string)
 
 #### Output:
 Each base64 image string is outputted in one row of stdout. If id for the image is set, id and base64 image data are delimited with space char.
