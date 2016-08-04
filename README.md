@@ -11,17 +11,17 @@ In new version, you can specify additional _css_ and _defs_ options to style you
 var svg2base64 = require('svg2base64');
 
 var svg =
-		'<svg xmlns="http://www.w3.org/2000/svg" width="300px" height="80">' + 
-			'<text x="150" y="40" dy=".4em" font-size="50px" text-anchor="middle">' +
-			'Hello World!' +
-			'</text>' + 
-		'</svg>';                         
+  '<svg xmlns="http://www.w3.org/2000/svg" width="300px" height="80">' + 
+  '<text x="150" y="40" dy=".4em" font-size="50px" text-anchor="middle">' +
+    'Hello World!' +
+  '</text>' + 
+  '</svg>';                         
 
 svg2base64(svg, {
-		"scale": 4,
-		"id": "mySvg",
-		"type": "png",
-    "css": "text { fill: #735ce8; stroke: #33d8b8; }"
+  "scale": 4,
+  "id": "mySvg",
+  "type": "png",
+  "css": "text { fill: #735ce8; stroke: #33d8b8; }"
 });         
 ```
 
@@ -52,8 +52,8 @@ svg2base64(svg, {options})
 	* '**_type_**':   image type ('png' or 'jpeg'; default: 'png')
 	* '**_width_**':  image width (default: svg width)
 	* '**_height_**': image height (default: svg height)
-	* '**_defs**':    defs string (default: empty string) [MDN ref](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
-	* '**_css**':     css string (default: empty string)
+	* '**_defs_**':    defs string (default: empty string) [MDN ref](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
+	* '**_css_**':     css string (default: empty string)
 
 #### Output:
 Each base64 image string is outputted in one row of stdout. If id for the image is set, id and base64 image data are delimited with space char.
